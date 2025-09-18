@@ -1,4 +1,4 @@
-#  Update Wordlists — Pentest Edition
+#  GIT_&_Sec-Word_Lists_Update (Pentest Edition)
 
   Скрипт для автоматизированного обновления и управления словарями (wordlists) и пейлоад-наборами, используемыми в пентесте.  
   Основные возможности:
