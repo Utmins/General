@@ -1,0 +1,13 @@
+Run date: 2025-09-18
+Starting with selected options...
+[*] Repository: /home/user/tools/SecLists
+    → pulling as user …
+    Already up to date
+>>> Target directory for extra wordlists: /usr/share/wordlists/_3rdparty
+[+] Cloning PayloadsAllTheThings...
+>>> Auto-decompressing archives under /usr/share/wordlists ...
+  [+] Decompressing: /usr/share/wordlists/rockyou.txt.gz -> /usr/share/wordlists/rockyou.txt
+>>> Linking all wordlists into: /usr/share/wordlists/_all-links
+>>> Linked files: 1427
+>>> Dedup: prefer APT over GIT
+Dedup report saved to: /home/user/Git_Update_Reports/prefer_apt_over_git_2025-09-18_10-00-00.txt
