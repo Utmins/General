@@ -1,9 +1,9 @@
-# Purple_GIT_&_Sec-Word_Lists_Update v8
+# Purple_GIT_&_Sec-Word_Lists_Update
 
 All‑in‑one maintainer for **cybersecurity wordlists** and **Git repositories**. It updates existing repos (as the repo owner), clones popular wordlist collections, auto‑decompresses archives under `/usr/share/wordlists`, creates a unified `_all-links` hub of symlinks, and (optionally) **deduplicates** Git repos if the same assets are already provided by **APT packages**.
 
 > Built from your uploaded script and packaged for GitHub distribution.  
-> **Script file:** `Purple_GIT_&_Sec-Word_Lists_Update_v8.sh`
+> **Script file:** `Purple_GIT_&_Sec-Word_Lists_Update.sh`
 
 ---
 
@@ -34,21 +34,21 @@ See [`docs/USAGE.md`](docs/USAGE.md). The interactive menu mirrors all flags.
 chmod +x INSTALL.sh
 ./INSTALL.sh /usr/local/bin
 # Now run:
-sudo /usr/local/bin/Purple_GIT_&_Sec-Word_Lists_Update_v8.sh
+sudo /usr/local/bin/Purple_GIT_&_Sec-Word_Lists_Update.sh
 ```
 
 ## 🧪 Typical Scenarios
 ### 1) Blue‑team lab refresh
 ```bash
-sudo ./Purple_GIT_&_Sec-Word_Lists_Update_v8.sh --no-menu --apt-bootstrap --include-assetnote
+sudo ./Purple_GIT_&_Sec-Word_Lists_Update.sh --no-menu --apt-bootstrap --include-assetnote
 ```
 ### 2) Forensic‑safe preview
 ```bash
-./Purple_GIT_&_Sec-Word_Lists_Update_v8.sh --no-menu --dry-run
+./Purple_GIT_&_Sec-Word_Lists_Update.sh --no-menu --dry-run
 ```
 ### 3) Daily maintenance with dedup
 ```bash
-sudo ./Purple_GIT_&_Sec-Word_Lists_Update_v8.sh --no-menu --links-dedup --dedup-prefer-apt --apply
+sudo ./Purple_GIT_&_Sec-Word_Lists_Update.sh --no-menu --links-dedup --dedup-prefer-apt --apply
 ```
 
 ## 📝 Logs & Reports
@@ -61,7 +61,7 @@ sudo ./Purple_GIT_&_Sec-Word_Lists_Update_v8.sh --no-menu --links-dedup --dedup-
 - **Dry‑run** is available for safe previews.
 
 ## 📦 What’s inside this repo package
-- `Purple_GIT_&_Sec-Word_Lists_Update_v8.sh` — main script
+- `Purple_GIT_&_Sec-Word_Lists_Update.sh` — main script
 - `INSTALL.sh` — helper installer
 - `docs/QUICKSTART.md`, `docs/USAGE.md`
 - `CHANGELOG.md`, `LICENSE`, `CONTRIBUTING.md`, `SECURITY.md`
