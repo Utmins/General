@@ -31,15 +31,15 @@ The script provides an **interactive menu** and **CLI flags**. Interactive menu 
 ## Example Workflows
 - **Blue-team lab refresh**
   ```bash
-  sudo ./Purple_GIT_&_Sec-Word_Lists_Update_v8.sh --no-menu --apt-bootstrap --include-assetnote
+  sudo ./Purple_GIT_&_Sec-Word_Lists_Update.sh --no-menu --apt-bootstrap --include-assetnote
   ```
 - **Forensic-safe preview**
   ```bash
-  ./Purple_GIT_&_Sec-Word_Lists_Update_v8.sh --no-menu --dry-run
+  ./Purple_GIT_&_Sec-Word_Lists_Update.sh --no-menu --dry-run
   ```
 - **Daily maintenance (apply dedup)**
   ```bash
-  sudo ./Purple_GIT_&_Sec-Word_Lists_Update_v8.sh --no-menu --links-dedup --dedup-prefer-apt --apply
+  sudo ./Purple_GIT_&_Sec-Word_Lists_Update.sh --no-menu --links-dedup --dedup-prefer-apt --apply
   ```
 
 ## Requirements
