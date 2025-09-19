@@ -20,14 +20,13 @@
   - **PEP 668 aware** — adds `--break-system-packages` only when needed and only if allowed.
 - **Visibility of system state**:
   - Prints installed `python3-*` APT packages (via `dpkg-query`) for quick inspection.
-  - Detects if you are in a virtualenv, explains what the update will affect.
+  - Detects if you are in a virtualenv, and explains what the update will affect.
 
 ---
 
 ## 📦 Files in this repository
 
-- `kali_python_update_new.sh` — main script (as provided; preserved verbatim).
-- `kali_python_update.sh` — convenience alias (same content).
+- `kali_python_update.sh` — script (as provided; preserved verbatim).
 - `README.md` — this detailed documentation.
 - `README_catalog.md` — short catalog summary for higher-level directory readme.
 - `CHANGELOG.md` — release notes.
@@ -38,7 +37,6 @@
 
 Checksums:
 ```text
-kali_python_update_new.sh  b0e444318e81c8231c898959f6cb317032ba61583730b4a6c84010cd7bd6b119
 kali_python_update.sh      b0e444318e81c8231c898959f6cb317032ba61583730b4a6c84010cd7bd6b119
 ```
 
@@ -55,9 +53,9 @@ kali_python_update.sh      b0e444318e81c8231c898959f6cb317032ba61583730b4a6c8401
 ## 🚀 Quick Start
 
 ```bash
-chmod +x ./kali_python_update_new.sh
-./kali_python_update_new.sh            # interactive by default
-./kali_python_update_new.sh --auto     # non-interactive
+chmod +x ./kali_python_update.sh
+./kali_python_update.sh            # interactive by default
+./kali_python_update.sh --auto     # non-interactive
 ```
 
 > Tip: run with `--no-bootstrap` if you *only* want to update packages without installing any tooling.
@@ -67,7 +65,7 @@ chmod +x ./kali_python_update_new.sh
 ## 🧭 CLI Options & Behavior (exhaustive)
 
 ```
-Usage: ./kali_python_update_new.sh [--auto|--interactive] [--no-break] [--no-bootstrap]
+Usage: ./kali_python_update.sh [--auto|--interactive] [--no-break] [--no-bootstrap]
 ```
 
 ### `--auto`  
@@ -111,20 +109,20 @@ Skips initial checks/installs for `python3`, `pip`, `pipx`, and the curated tool
 
 - **Daily maintenance (no prompts):**
   ```bash
-  ./kali_python_update_new.sh --auto
+  ./kali_python_update.sh --auto
   ```
 - **Granular control:**
   ```bash
-  ./kali_python_update_new.sh --interactive
+  ./kali_python_update.sh --interactive
   ```
 - **Within a virtualenv (project‑local updates):**
   ```bash
   python3 -m venv .venv && source .venv/bin/activate
-  ./kali_python_update_new.sh --interactive
+  ./kali_python_update.sh --interactive
   ```
 - **Audit only (no bootstrap, just see outdated list):**
   ```bash
-  ./kali_python_update_new.sh --no-bootstrap --interactive
+  ./kali_python_update.sh --no-bootstrap --interactive
   ```
 
 ---
